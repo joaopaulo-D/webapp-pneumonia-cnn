@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+    <center>
+        <img src="{{ url_for('static', filename= filename) }}" alt="" style="width: 250px; height:250px; border: 2px solid #fff; border-radius: 8px;">
+    </center>
+    <br>
+    <br>
+{% if show == True %}
+    <center>
+
+        {% if message == "Normal" %}
+            <h3><span class="badge badge-success">{{message}}</span></h3>
+        {%endif%}
+
+        {% if message == "Pneumonia" %}
+            <h3><span class="badge badge-danger">{{message}}</span></h3>
+        {%endif%}
+
+        <a href="/" class="btn btn-info" role="button">Voltar</a>
+        <br>
+        <br>
+    </center>
+{% else %}
+    <center>
+        <h2>Algoritimo com base em CNN</h2>
+        <br>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <label for="file">Carregue seu Raio - X  </label>
+            <input type="file" name="img" id="img">
+            <button type="submit" class="btn btn-primary ml-3">Resultado</button>
+        </form>
+        <br>
+        <br>
+        {{message}}
+    </center>
+{% endif %}
+{% endblock%}
