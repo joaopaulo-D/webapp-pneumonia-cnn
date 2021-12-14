@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 
 {% block content%}
-
     <center>
         <img src="{{ url_for('static', filename= filename) }}" alt="" style="width: 250px; height:250px; border: 2px solid #fff; border-radius: 8px;">
     </center>
@@ -9,7 +8,6 @@
     <br>
 {% if show == True %}
     <center>
-
         {% if message == "Normal" %}
             <h3><span class="badge badge-success">{{message}}</span></h3>
         {%endif%}
