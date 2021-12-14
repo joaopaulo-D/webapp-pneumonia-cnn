@@ -1,4 +1,5 @@
-from flask import Flask,render_template,redirect,request,send_from_directory
+import tensorflow as tf
+from tensorflow.flask import Flask,render_template,redirect,request,send_from_directory
 from tensorflow.keras.models import load_model
 import os
 from PIL import Image
