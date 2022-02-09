@@ -1,6 +1,6 @@
 import tensorflow as tf
-from tensorflow.flask import Flask,render_template,redirect,request,send_from_directory
-from tensorflow.keras.models import load_model
+from flask import Flask,render_template,request
+from keras.models import load_model
 import os
 from PIL import Image
 import numpy as np
