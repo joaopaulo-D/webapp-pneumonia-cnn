@@ -4,7 +4,7 @@
 ## ✨ Tecnologias
 
 - [x] Flask
-- [x] Tenserflow
+- [x] Tensorflow
 
 <h2>Home</h2>
 
