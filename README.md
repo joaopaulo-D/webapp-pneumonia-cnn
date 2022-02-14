@@ -1,5 +1,10 @@
-# webapp-pneumonia-cnn
-WebApp de detecção de Pneumonia utilizando algoritmos de Convolutional Neural network (CNN)
+## webapp-pneumonia-cnn
+- WebApp de detecção de Pneumonia utilizando algoritmos de Convolutional Neural network (CNN)
+
+## ✨ Tecnologias
+
+- [x] Flask
+- [x] Tenserflow
 
 <h2>Home</h2>
 
